@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Abilities" parentEntity="GameObject" syncable="YES">
+        <attribute name="baseModifier" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="charisma" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="constitution" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="dexterity" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="difficultyValue" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <attribute name="wisdom" optional="YES" attributeType="Integer 16" indexed="YES" syncable="YES"/>
+        <relationship name="abilitiesPlayer" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="playerAbilities" inverseEntity="Player" syncable="YES"/>
+        <relationship name="equipment" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Equipment" inverseName="abilities" inverseEntity="Equipment" syncable="YES"/>
+        <relationship name="task" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="abilities" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="Equipment" parentEntity="GameObject" syncable="YES">
+        <relationship name="abilities" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Abilities" inverseName="equipment" inverseEntity="Abilities" syncable="YES"/>
+    </entity>
+    <entity name="GameObject" syncable="YES">
+        <attribute name="actionStory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES"/>
+        <attribute name="inGameObject" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="introStory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loseStory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleStory" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="winStory" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="GameObject" inverseName="parent" inverseEntity="GameObject" syncable="YES"/>
+    </entity>
+    <entity name="Player" parentEntity="GameObject" syncable="YES">
+        <attribute name="elo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="home" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="player" inverseEntity="Task" syncable="YES"/>
+        <relationship name="playerAbilities" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Abilities" inverseName="abilitiesPlayer" inverseEntity="Abilities" syncable="YES"/>
+        <relationship name="universe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Universe" inverseName="player" inverseEntity="Universe" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" parentEntity="GameObject" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gateway" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="income" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="abilities" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Abilities" inverseName="task" inverseEntity="Abilities" syncable="YES"/>
+        <relationship name="accomplishments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="location" inverseEntity="Task" syncable="YES"/>
+        <relationship name="location" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="accomplishments" inverseEntity="Task" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="locations" inverseEntity="Task" syncable="YES"/>
+        <relationship name="player" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="home" inverseEntity="Player" syncable="YES"/>
+        <relationship name="universe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Universe" inverseName="quests" inverseEntity="Universe" syncable="YES"/>
+    </entity>
+    <entity name="Universe" parentEntity="GameObject" syncable="YES">
+        <attribute name="monetaryUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temporalUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temporalUnitsPassed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="home" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Task" inverseName="universe" inverseEntity="Task" syncable="YES"/>
+        <relationship name="player" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Player" inverseName="universe" inverseEntity="Player" syncable="YES"/>
+        <relationship name="quests" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Task" inverseName="universe" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Abilities" positionX="-182" positionY="45" width="128" height="204"/>
+        <element name="Equipment" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="GameObject" positionX="36" positionY="53" width="128" height="159"/>
+        <element name="Player" positionX="252" positionY="201" width="128" height="99"/>
+        <element name="Task" positionX="-180" positionY="204" width="128" height="180"/>
+        <element name="Universe" positionX="81" positionY="360" width="128" height="135"/>
+    </elements>
+</model>

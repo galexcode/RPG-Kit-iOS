@@ -1,0 +1,212 @@
+/* 
+  Localizable.strings
+  RPG KIT
+
+  Created by Philip Regan on 4/14/12.
+  Copyright (c) 2012 Jones & Bartlett Learning. All rights reserved.
+*/
+
+/* General Application Information */
+
+// Global
+"OCAppName" = "RPG Kit";
+
+// Game Selector View
+"OCMainViewBackButton" = "All Games";
+
+// Game Component Selection
+"OCGameSelectorBackButton" = "Game Mode";
+
+"OCGameComponentGame" = "Game";
+"OCGameComponentPlayer" = "Player";
+"OCGameComponentEquipment" = "Equipment";
+"OCGameComponentTask" = "Tasks";
+
+// Game Component Edit (All Components)
+
+"OCGameComponentBackButton" = "Components";
+
+// Game Metadata View
+
+"OCGameMetadataTitle" = "Game Metadata";
+"OCGameMetadataGameTitle" = "Title";
+"OCGameMetadataGameIntro" = "Introduction/About";
+"OCGameMetadataGameMoney" = "Monetary Unit";
+"OCGameMetadataGameTime" = "Temporal Unit";
+
+// Game Object SelectionView
+
+"OCGameSelectionBackButtonTasks" = "Tasks";
+"OCGameSelectionBackButtonEquipment" = "Equipment";
+
+// Task Metadata View
+"OCTaskMetadataTitle" = "Task Metadata";
+"OCQuestMetadataBackButton" = "Quest";
+"OCTaskMetadataTaskTitle" = "Title";
+"OCTaskMetadataTaskIntro" = "Introduction/About";
+
+// Alert Views
+
+"OCAlertViewCancelButtonTitle" = "OK";
+"OCAlertViewTitleWin" = "You won!";
+"OCAlertViewMessageWin" = "Now go do something else!";
+"OCAlertViewCancelButtonTitleWin" = "On it!";
+"OCAlertViewTitleLose" = "You lost";
+"OCAlertViewMessageLose" = "How about a nice game of chess?";
+"OCAlertViewCancelButtonTitleLose" = "Perhaps";
+
+// Sample Game Content
+
+"OCTemporalUnitWeek" = "week";
+"OCTemporalUnitDay" = "day";
+"OCTemporalUnitHour" = "hour";
+"OCTemporalUnitExample" = "day, week, month";
+
+"OCMonetaryUnitDollar" = "dollar";
+"OCMonetaryUnitCredit" = "credit";
+"OCMonetaryUnitGoldPiece" = "dollar, credit, gold piece";
+
+/* A Day At The Races: The Auto-Racing RPG */
+
+"OCUniverseTitleAuto" = "A Day At The Races";
+"OCUniverseIntroAuto" = "Like Gran Turismo, but without the hassle of actually driving the car.";
+
+/* Home Task */
+
+"OCHomeTitleAuto" = "Moe's Garage";
+"OCHomeIntroAuto" = "Home of the world famous 3STG Racing Team.";
+
+/* Easy Task */
+
+"OCEasyTaskTitleAuto" = "Larry's Dealership and Parts";
+"OCEasyTaskIntroAuto" = "Everything needed to race all the time.";
+
+/* Accomplishment for Easy Task */
+"OCEasyAccomplishmentTitleAuto" = "Buy something.";
+"OCEasyAccomplishmentIntroAuto" = "Anything (feature not implemented yet)";
+
+/* Hard Task */
+
+"OCHardTaskTitleAuto" = "R Classic";
+"OCHardTaskIntroAuto" = "Drive against the best (and the worst) in R-Series cars. Sponsered by Bud Lite.";
+
+/* Accomplishment for Hard Task */
+"OCHardAccomplishmentTitleAuto" = "Road course, 2.3 miles, 100 laps";
+"OCHardAccomplishmentIntroAuto" = "1st place prize: Alfa Romeo GT 3.2 V6 24V '04";
+
+/* Boss Task */
+
+"OCBossTaskTitleAuto" = "GT Classic";
+"OCBossTaskIntroAuto" = "Only the best get to drive GT Supercars, and only the best make it into the GT Classic. Sponsered by Audi.";
+
+/* Accomplishment for Boss Task */
+"OCBossAccomplishmentTitleAuto" = "Super speedway, 3.1 miles, 200 laps";
+"OCBossAccomplishmentIntroAuto" = "1st place prize: $25,000";
+
+/* Generic Task */
+
+"OCGenericTaskTitleAuto" = "Race %c %c Circuit";
+"OCGenericTaskIntroAuto" = "Race Race %c %c Circuit is all about speed and adrenaline (if you were actually driving the car).";
+
+/* Accomplishment for Generic Task */
+"OCGenericAccomplishmentTitleAuto" = "Oval track, 1.5 miles, 50 laps";
+"OCGenericAccomplishmentIntroAuto" = "1st place prize: $5,000";
+
+/* Player */
+
+"OCPlayerTitleAuto" = "The Stig's Virtual Cousin";
+"OCPlayerIntroAuto" = "Asking \"Who is The Stig?\" is a question of massive metaphysical implications.";
+
+
+/* Back At The Office: The Mundane RPG */
+
+"OCUniverseTitleOffice" = "Back At The Office";
+"OCUniverseIntroOffice" = "Meanwhile, in the real world, this week is your turn in the Office Donut Club.";
+
+/* Home Task */
+
+"OCHomeTitleOffice" = "Home Sweet Home";
+"OCHomeIntroOffice" = "The car is in the garage warming up for the commute.";
+
+/* Easy Task */
+
+"OCEasyTaskTitleOffice" = "The Donut Store";
+"OCEasyTaskIntroOffice" = "America's favorite all-day, everyday stop for coffee and baked goods. Try FizzBuzz, the new carbonated coffee beverage.";
+
+/* Accomplishment for Easy Task */
+"OCEasyAccomplishmentTitleOffice" = "Buy something.";
+"OCEasyAccomplishmentIntroOffice" = "Anything (feature not implemented yet)";
+
+/* Hard Task */
+
+"OCHardTaskTitleOffice" = "Le Donument";
+"OCHardTaskIntroOffice" = "Purveyors of luxury donuts. Handcrafted by specially-trained chefs with hoity European accents. Try their new, groundbreaking drink—Gazéifiée Café—perfectly paired with their Le Démodé Donette.";
+
+/* Accomplishment for Hard Task */
+"OCHardAccomplishmentTitleOffice" = "Treize à la Douzaine Variété Raffle";
+"OCHardAccomplishmentIntroOffice" = "Win 1 Treize à la Douzaine Variété, valued at $500. Free entry with purchase of large Gazéifiée Café (now only $50)";
+
+/* Boss Task */
+
+"OCBossTaskTitleOffice" = "Innotech";
+"OCBossTaskIntroOffice" = "If you don't have the donuts, then don't bother showing up.";
+
+/* Accomplishment for Boss Task */
+"OCBossAccomplishmentTitleOffice" = "TPS Reports and Tetris";
+"OCBossAccomplishmentIntroOffice" = "These TPS reports really intrude on Tetris time. Do NOT forget the cover sheet as clearly stated in the memo.";
+
+/* Generic Task */
+
+"OCGenericTaskTitleOffice" = "Chotchkie's Location # %c-%c";
+"OCGenericTaskIntroOffice" = "All you ever really want is the coffee because you think Gazéifiée Café is just wrong.";
+
+/* Accomplishment for Generic Task */
+"OCGenericAccomplishmentTitleOffice" = "Oval track, 1.5 miles, 50 laps";
+"OCGenericAccomplishmentIntroOffice" = "1st place prize: $5,000";
+
+/* Player */
+
+"OCPlayerTitleOffice" = "Tyler Durden";
+"OCPlayerIntroOffice" = "Use soap.";
+
+/* Generic, Brand New RPG */
+
+"OCUniverseTitleGeneric" = "My New RPG";
+"OCUniverseIntroGeneric" = "A new RPG, devoid of any obstacles, ready for creation.";
+
+/* Home Task */
+
+"OCHomeTitleGeneric" = "Home Location";
+"OCHomeIntroGeneric" = "This can never be deleted, and the player will always find safe harbor here.";
+
+/* Easy Task */
+
+"OCEasyTaskTitleGeneric" = "Location 1";
+"OCEasyTaskIntroGeneric" = "Information about this goes here.";
+
+/* Hard Task */
+
+"OCHardTaskTitleGeneric" = "Location 2";
+
+/* Accomplishment Tasks */
+"OCAccomplishmentTitleGeneric" = "An Accomplishment";
+"OCAccomplishmentIntroGeneric" = "This is where the player has to do something.";
+
+
+/* Boss Task */
+
+"OCBossTaskTitleGeneric" = "Location 3";
+
+/* Accomplishment for Boss Task */
+"OCBossAccomplishmentTitleGeneric" = "Location 3";
+
+/* Generic Task */
+
+"OCGenericTaskTitleGeneric" = "Task Umpteen";
+"OCGenericTaskIntroGeneric" = "This is Task Umpteen";
+
+/* Player */
+
+"OCPlayerTitleGeneric" = "Player J. Smith";
+"OCPlayerIntroGeneric" = "Information about the player goes here.";
+

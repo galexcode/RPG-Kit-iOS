@@ -1,0 +1,63 @@
+Based on Pathfinder, an fork of the d20 System, but free to use without license.
+http://www.d20pfsrd.com
+
+That system is specific to fantasy, so this engine, while based upon Pathfinder in 
+terms of abilities, systemic implementation, and number ranges, is much more generalized 
+in nature.
+
+Core game play
+
+Player is paired to an accomplishment.
+
+The accomplishment has a difficulty value typically between 1 and 20 but can be higher
+if needed.
+
+The player rolls a number between 1 and 20. The core mechanics is if the player's roll 
+is higher than the accomplishment's difficulty class, the player wins. If the roll 
+is less than or equal to the accomplishment's roll, the player loses. 
+
+The accomplishment also lists abilities upon which the player can apply bonuses to 
+their roll depending on their own attributes. In addition, equipment used by the player
+may have bonuses listed that add to the player's roll if the equipment is applicable to
+the accomplishment. So, the player's roll is constructed as such:
+
+[base attempt roll] + [ability modifiers] + [equipment modifiers]
+
+By way of example, given an accomplishment with a difficulty of 12 and the accomplishment
+lists Intelligence and Dexterity as being applicable abilities, and given a player with
+a Intelligence of 13 and Dexterity of 12, the rolls would look like this should the 
+player roll a 10:
+
+10 + [2 + 1] = 13 vs 12
+
+...which means the player wins to accomplishment.
+
+Reward vs Risk
+
+Accomplishments list money and equipment that can be passed onto the player should 
+they win their roll. Conversely, accomplishments also list money and equipement that
+can be taken away from the player should they lose.
+
+Ability Modifiers
+
+Abilities are a number between 1-18. 
+
+1: -5
+2: -4
+3: -4
+4: -3
+5: -3
+6: -2
+7: -2
+8: -1
+9: -1
+10: 0
+11: +1
+12: +1
+13: +2
+14: +2
+15: +3
+16: +3
+17: +4
+18: +4
+

@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9005987B153DDCB60053957D /* PlayerMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90059879153DDCB60053957D /* PlayerMetadataViewController.m */; };
+		9005987C153DDCB60053957D /* PlayerMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90059879153DDCB60053957D /* PlayerMetadataViewController.m */; };
+		9005987D153DDCB60053957D /* PlayerMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9005987A153DDCB60053957D /* PlayerMetadataViewController.xib */; };
+		9005987E153DDCB60053957D /* PlayerMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9005987A153DDCB60053957D /* PlayerMetadataViewController.xib */; };
+		90225FF8153CED1F000E7F61 /* GameMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90225FF6153CED1F000E7F61 /* GameMetadataViewController.m */; };
+		90225FF9153CED1F000E7F61 /* GameMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90225FF6153CED1F000E7F61 /* GameMetadataViewController.m */; };
+		90225FFE153CF191000E7F61 /* GameMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90226001153CF191000E7F61 /* GameMetadataViewController.xib */; };
+		90225FFF153CF191000E7F61 /* GameMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90226001153CF191000E7F61 /* GameMetadataViewController.xib */; };
+		9076C43815515B3700E8A1C0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9076C43715515B3700E8A1C0 /* icon.png */; };
+		9076C43A15515B3A00E8A1C0 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9076C43915515B3A00E8A1C0 /* icon@2x.png */; };
+		90BBECC0154232250025034B /* TaskMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBECBE154232250025034B /* TaskMetadataViewController.m */; };
+		90BBECC1154232250025034B /* TaskMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBECBE154232250025034B /* TaskMetadataViewController.m */; };
+		90BBECC2154232250025034B /* TaskMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BBECBF154232250025034B /* TaskMetadataViewController.xib */; };
+		90BBECC3154232250025034B /* TaskMetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BBECBF154232250025034B /* TaskMetadataViewController.xib */; };
+		90BBECC71542FF630025034B /* GameEngineNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 90BBECC61542FF630025034B /* GameEngineNotes.txt */; };
+		90BBECC81542FF630025034B /* GameEngineNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 90BBECC61542FF630025034B /* GameEngineNotes.txt */; };
+		90BBECCC15430F160025034B /* GamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBECCA15430F150025034B /* GamePlayViewController.m */; };
+		90BBECCD15430F160025034B /* GamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBECCA15430F150025034B /* GamePlayViewController.m */; };
+		90BBECCE15430F160025034B /* GamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BBECCB15430F160025034B /* GamePlayViewController.xib */; };
+		90BBECCF15430F160025034B /* GamePlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BBECCB15430F160025034B /* GamePlayViewController.xib */; };
+		90BBECD3154313C20025034B /* OCGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBECD2154313C20025034B /* OCGameEngine.m */; };
+		90BBECD4154313C20025034B /* OCGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBECD2154313C20025034B /* OCGameEngine.m */; };
+		90C2F2B41539F2C100C3BCE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B31539F2C100C3BCE9 /* UIKit.framework */; };
+		90C2F2B61539F2C100C3BCE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B51539F2C100C3BCE9 /* Foundation.framework */; };
+		90C2F2B81539F2C100C3BCE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B71539F2C100C3BCE9 /* CoreGraphics.framework */; };
+		90C2F2BA1539F2C100C3BCE9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B91539F2C100C3BCE9 /* CoreData.framework */; };
+		90C2F2C01539F2C100C3BCE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C2F2BE1539F2C100C3BCE9 /* InfoPlist.strings */; };
+		90C2F2C21539F2C100C3BCE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F2C11539F2C100C3BCE9 /* main.m */; };
+		90C2F2C61539F2C100C3BCE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F2C51539F2C100C3BCE9 /* AppDelegate.m */; };
+		90C2F2C91539F2C100C3BCE9 /* RPG_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F2C71539F2C100C3BCE9 /* RPG_Kit.xcdatamodeld */; };
+		90C2F2CC1539F2C100C3BCE9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F2CB1539F2C100C3BCE9 /* MainViewController.m */; };
+		90C2F2CF1539F2C100C3BCE9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F2CE1539F2C100C3BCE9 /* FlipsideViewController.m */; };
+		90C2F2D21539F2C200C3BCE9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C2F2D01539F2C200C3BCE9 /* MainViewController.xib */; };
+		90C2F2D51539F2C200C3BCE9 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C2F2D31539F2C200C3BCE9 /* FlipsideViewController.xib */; };
+		90C2F2DD1539F2C300C3BCE9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2DC1539F2C300C3BCE9 /* SenTestingKit.framework */; };
+		90C2F2DE1539F2C300C3BCE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B31539F2C100C3BCE9 /* UIKit.framework */; };
+		90C2F2DF1539F2C300C3BCE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B51539F2C100C3BCE9 /* Foundation.framework */; };
+		90C2F2E01539F2C300C3BCE9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C2F2B91539F2C100C3BCE9 /* CoreData.framework */; };
+		90C2F2E81539F2C300C3BCE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C2F2E61539F2C300C3BCE9 /* InfoPlist.strings */; };
+		90C2F2EB1539F2C300C3BCE9 /* RPG_KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F2EA1539F2C300C3BCE9 /* RPG_KitTests.m */; };
+		90C2F3071539F78600C3BCE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C2F3061539F78600C3BCE9 /* Localizable.strings */; };
+		90C2F3081539F78600C3BCE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C2F3061539F78600C3BCE9 /* Localizable.strings */; };
+		90C2F30B1539F79400C3BCE9 /* OCGameDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F30A1539F79400C3BCE9 /* OCGameDataController.m */; };
+		90C2F30C1539F79400C3BCE9 /* OCGameDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C2F30A1539F79400C3BCE9 /* OCGameDataController.m */; };
+		90C55B82153EE55600C19381 /* GameObjectSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C55B80153EE55600C19381 /* GameObjectSelectionViewController.m */; };
+		90C55B83153EE55600C19381 /* GameObjectSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C55B80153EE55600C19381 /* GameObjectSelectionViewController.m */; };
+		90C55B84153EE55600C19381 /* GameObjectSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C55B81153EE55600C19381 /* GameObjectSelectionViewController.xib */; };
+		90C55B85153EE55600C19381 /* GameObjectSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C55B81153EE55600C19381 /* GameObjectSelectionViewController.xib */; };
+		90C6ECDE154CD13F00413CC7 /* GameObjectLinkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6ECDC154CD13F00413CC7 /* GameObjectLinkerViewController.m */; };
+		90C6ECDF154CD13F00413CC7 /* GameObjectLinkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6ECDC154CD13F00413CC7 /* GameObjectLinkerViewController.m */; };
+		90C6ECE0154CD13F00413CC7 /* GameObjectLinkerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C6ECDD154CD13F00413CC7 /* GameObjectLinkerViewController.xib */; };
+		90C6ECE1154CD13F00413CC7 /* GameObjectLinkerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C6ECDD154CD13F00413CC7 /* GameObjectLinkerViewController.xib */; };
+		90C6ECE7154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6ECE5154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m */; };
+		90C6ECE8154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6ECE5154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m */; };
+		90C6ECE9154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C6ECE6154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib */; };
+		90C6ECEA154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C6ECE6154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib */; };
+		90D1A9BE153CB38F003D083D /* GameComponentSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1A9BC153CB38F003D083D /* GameComponentSelectorViewController.m */; };
+		90D1A9BF153CB38F003D083D /* GameComponentSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1A9BC153CB38F003D083D /* GameComponentSelectorViewController.m */; };
+		90D1A9C0153CB38F003D083D /* GameComponentSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D1A9BD153CB38F003D083D /* GameComponentSelectorViewController.xib */; };
+		90D1A9C1153CB38F003D083D /* GameComponentSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D1A9BD153CB38F003D083D /* GameComponentSelectorViewController.xib */; };
+		90DD13FF153AFA3900842B38 /* GameSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DD13FD153AFA3900842B38 /* GameSelectorViewController.m */; };
+		90DD1400153AFA3900842B38 /* GameSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DD13FD153AFA3900842B38 /* GameSelectorViewController.m */; };
+		90DD1401153AFA3900842B38 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DD13FE153AFA3900842B38 /* GameSelectorViewController.xib */; };
+		90DD1402153AFA3900842B38 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DD13FE153AFA3900842B38 /* GameSelectorViewController.xib */; };
+		90E807B1153C3ADE00530BD2 /* OCStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E807B0153C3ADE00530BD2 /* OCStrings.m */; };
+		90E807B2153C3ADE00530BD2 /* OCStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E807B0153C3ADE00530BD2 /* OCStrings.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90C2F2E11539F2C300C3BCE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90C2F2A61539F2C100C3BCE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90C2F2AE1539F2C100C3BCE9;
+			remoteInfo = "RPG Kit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90059878153DDCB60053957D /* PlayerMetadataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMetadataViewController.h; sourceTree = "<group>"; };
+		90059879153DDCB60053957D /* PlayerMetadataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMetadataViewController.m; sourceTree = "<group>"; };
+		9005987A153DDCB60053957D /* PlayerMetadataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerMetadataViewController.xib; sourceTree = "<group>"; };
+		90225FF5153CED1F000E7F61 /* GameMetadataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GameMetadataViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		90225FF6153CED1F000E7F61 /* GameMetadataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GameMetadataViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		90226000153CF191000E7F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameMetadataViewController.xib; sourceTree = "<group>"; };
+		9076C43715515B3700E8A1C0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		9076C43915515B3A00E8A1C0 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		90BBECBD154232250025034B /* TaskMetadataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskMetadataViewController.h; sourceTree = "<group>"; };
+		90BBECBE154232250025034B /* TaskMetadataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskMetadataViewController.m; sourceTree = "<group>"; };
+		90BBECBF154232250025034B /* TaskMetadataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskMetadataViewController.xib; sourceTree = "<group>"; };
+		90BBECC61542FF630025034B /* GameEngineNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GameEngineNotes.txt; sourceTree = "<group>"; };
+		90BBECC915430F150025034B /* GamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayViewController.h; sourceTree = "<group>"; };
+		90BBECCA15430F150025034B /* GamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayViewController.m; sourceTree = "<group>"; };
+		90BBECCB15430F160025034B /* GamePlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlayViewController.xib; sourceTree = "<group>"; };
+		90BBECD1154313C20025034B /* OCGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGameEngine.h; sourceTree = "<group>"; };
+		90BBECD2154313C20025034B /* OCGameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCGameEngine.m; sourceTree = "<group>"; };
+		90C2F2AF1539F2C100C3BCE9 /* RPG Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C2F2B31539F2C100C3BCE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90C2F2B51539F2C100C3BCE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90C2F2B71539F2C100C3BCE9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90C2F2B91539F2C100C3BCE9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		90C2F2BD1539F2C100C3BCE9 /* RPG Kit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPG Kit-Info.plist"; sourceTree = "<group>"; };
+		90C2F2BF1539F2C100C3BCE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90C2F2C11539F2C100C3BCE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90C2F2C31539F2C100C3BCE9 /* RPG Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPG Kit-Prefix.pch"; sourceTree = "<group>"; };
+		90C2F2C41539F2C100C3BCE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90C2F2C51539F2C100C3BCE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90C2F2C81539F2C100C3BCE9 /* RPG_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPG_Kit.xcdatamodel; sourceTree = "<group>"; };
+		90C2F2CA1539F2C100C3BCE9 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		90C2F2CB1539F2C100C3BCE9 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		90C2F2CD1539F2C100C3BCE9 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		90C2F2CE1539F2C100C3BCE9 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		90C2F2D11539F2C200C3BCE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		90C2F2D41539F2C200C3BCE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+		90C2F2DB1539F2C300C3BCE9 /* RPG KitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPG KitTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C2F2DC1539F2C300C3BCE9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		90C2F2E51539F2C300C3BCE9 /* RPG KitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPG KitTests-Info.plist"; sourceTree = "<group>"; };
+		90C2F2E71539F2C300C3BCE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90C2F2E91539F2C300C3BCE9 /* RPG_KitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPG_KitTests.h; sourceTree = "<group>"; };
+		90C2F2EA1539F2C300C3BCE9 /* RPG_KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPG_KitTests.m; sourceTree = "<group>"; };
+		90C2F3041539F74100C3BCE9 /* ProjectNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProjectNotes.txt; sourceTree = "<group>"; };
+		90C2F3061539F78600C3BCE9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		90C2F3091539F79400C3BCE9 /* OCGameDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGameDataController.h; sourceTree = "<group>"; };
+		90C2F30A1539F79400C3BCE9 /* OCGameDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCGameDataController.m; sourceTree = "<group>"; };
+		90C55B7F153EE55600C19381 /* GameObjectSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectSelectionViewController.h; sourceTree = "<group>"; };
+		90C55B80153EE55600C19381 /* GameObjectSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectSelectionViewController.m; sourceTree = "<group>"; };
+		90C55B81153EE55600C19381 /* GameObjectSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameObjectSelectionViewController.xib; sourceTree = "<group>"; };
+		90C6ECDB154CD13F00413CC7 /* GameObjectLinkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectLinkerViewController.h; sourceTree = "<group>"; };
+		90C6ECDC154CD13F00413CC7 /* GameObjectLinkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectLinkerViewController.m; sourceTree = "<group>"; };
+		90C6ECDD154CD13F00413CC7 /* GameObjectLinkerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameObjectLinkerViewController.xib; sourceTree = "<group>"; };
+		90C6ECE4154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectViewLinkedAndDelinkViewController.h; sourceTree = "<group>"; };
+		90C6ECE5154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObjectViewLinkedAndDelinkViewController.m; sourceTree = "<group>"; };
+		90C6ECE6154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameObjectViewLinkedAndDelinkViewController.xib; sourceTree = "<group>"; };
+		90D1A9BB153CB38F003D083D /* GameComponentSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponentSelectorViewController.h; sourceTree = "<group>"; };
+		90D1A9BC153CB38F003D083D /* GameComponentSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameComponentSelectorViewController.m; sourceTree = "<group>"; };
+		90D1A9BD153CB38F003D083D /* GameComponentSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameComponentSelectorViewController.xib; sourceTree = "<group>"; };
+		90DD13FC153AFA3900842B38 /* GameSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSelectorViewController.h; sourceTree = "<group>"; };
+		90DD13FD153AFA3900842B38 /* GameSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSelectorViewController.m; sourceTree = "<group>"; };
+		90DD13FE153AFA3900842B38 /* GameSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameSelectorViewController.xib; sourceTree = "<group>"; };
+		90E807AF153C3ADE00530BD2 /* OCStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCStrings.h; sourceTree = "<group>"; };
+		90E807B0153C3ADE00530BD2 /* OCStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCStrings.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90C2F2AC1539F2C100C3BCE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C2F2B41539F2C100C3BCE9 /* UIKit.framework in Frameworks */,
+				90C2F2B61539F2C100C3BCE9 /* Foundation.framework in Frameworks */,
+				90C2F2B81539F2C100C3BCE9 /* CoreGraphics.framework in Frameworks */,
+				90C2F2BA1539F2C100C3BCE9 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C2F2D71539F2C300C3BCE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C2F2DD1539F2C300C3BCE9 /* SenTestingKit.framework in Frameworks */,
+				90C2F2DE1539F2C300C3BCE9 /* UIKit.framework in Frameworks */,
+				90C2F2DF1539F2C300C3BCE9 /* Foundation.framework in Frameworks */,
+				90C2F2E01539F2C300C3BCE9 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9005987F153DDCBD0053957D /* Player Metadata View */ = {
+			isa = PBXGroup;
+			children = (
+				90059878153DDCB60053957D /* PlayerMetadataViewController.h */,
+				90059879153DDCB60053957D /* PlayerMetadataViewController.m */,
+				9005987A153DDCB60053957D /* PlayerMetadataViewController.xib */,
+			);
+			name = "Player Metadata View";
+			sourceTree = "<group>";
+		};
+		90225FFD153CED2A000E7F61 /* Game Metadata View */ = {
+			isa = PBXGroup;
+			children = (
+				90225FF5153CED1F000E7F61 /* GameMetadataViewController.h */,
+				90225FF6153CED1F000E7F61 /* GameMetadataViewController.m */,
+				90226001153CF191000E7F61 /* GameMetadataViewController.xib */,
+			);
+			name = "Game Metadata View";
+			sourceTree = "<group>";
+		};
+		9069538B153DFC0600079F7C /* Game Object Selection View */ = {
+			isa = PBXGroup;
+			children = (
+				90C55B7F153EE55600C19381 /* GameObjectSelectionViewController.h */,
+				90C55B80153EE55600C19381 /* GameObjectSelectionViewController.m */,
+				90C55B81153EE55600C19381 /* GameObjectSelectionViewController.xib */,
+			);
+			name = "Game Object Selection View";
+			sourceTree = "<group>";
+		};
+		90BBECC51542323C0025034B /* Task Metadata View */ = {
+			isa = PBXGroup;
+			children = (
+				90BBECBD154232250025034B /* TaskMetadataViewController.h */,
+				90BBECBE154232250025034B /* TaskMetadataViewController.m */,
+				90BBECBF154232250025034B /* TaskMetadataViewController.xib */,
+			);
+			name = "Task Metadata View";
+			sourceTree = "<group>";
+		};
+		90BBECD015430F1D0025034B /* Game Play View */ = {
+			isa = PBXGroup;
+			children = (
+				90BBECC915430F150025034B /* GamePlayViewController.h */,
+				90BBECCA15430F150025034B /* GamePlayViewController.m */,
+				90BBECCB15430F160025034B /* GamePlayViewController.xib */,
+				90BBECD1154313C20025034B /* OCGameEngine.h */,
+				90BBECD2154313C20025034B /* OCGameEngine.m */,
+			);
+			name = "Game Play View";
+			sourceTree = "<group>";
+		};
+		90C2F2A41539F2C100C3BCE9 = {
+			isa = PBXGroup;
+			children = (
+				90C2F3041539F74100C3BCE9 /* ProjectNotes.txt */,
+				90BBECC61542FF630025034B /* GameEngineNotes.txt */,
+				90C2F2BB1539F2C100C3BCE9 /* RPG Kit */,
+				90C2F2E31539F2C300C3BCE9 /* RPG KitTests */,
+				90C2F2B21539F2C100C3BCE9 /* Frameworks */,
+				90C2F2B01539F2C100C3BCE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90C2F2B01539F2C100C3BCE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2AF1539F2C100C3BCE9 /* RPG Kit.app */,
+				90C2F2DB1539F2C300C3BCE9 /* RPG KitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90C2F2B21539F2C100C3BCE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2B31539F2C100C3BCE9 /* UIKit.framework */,
+				90C2F2B51539F2C100C3BCE9 /* Foundation.framework */,
+				90C2F2B71539F2C100C3BCE9 /* CoreGraphics.framework */,
+				90C2F2B91539F2C100C3BCE9 /* CoreData.framework */,
+				90C2F2DC1539F2C300C3BCE9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90C2F2BB1539F2C100C3BCE9 /* RPG Kit */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2C41539F2C100C3BCE9 /* AppDelegate.h */,
+				90C2F2C51539F2C100C3BCE9 /* AppDelegate.m */,
+				90DD13E6153A5F9F00842B38 /* Game Selection View */,
+				90D1A9C4153CB3CC003D083D /* Game Mode View */,
+				90BBECD015430F1D0025034B /* Game Play View */,
+				90D1A9C3153CB39D003D083D /* Game Component Selector */,
+				9069538B153DFC0600079F7C /* Game Object Selection View */,
+				90C6ECE3154CD14700413CC7 /* Game Object Linker */,
+				90C6ECEB154D7FF100413CC7 /* Game Object View Linked and Delink View */,
+				90225FFD153CED2A000E7F61 /* Game Metadata View */,
+				9005987F153DDCBD0053957D /* Player Metadata View */,
+				90BBECC51542323C0025034B /* Task Metadata View */,
+				90DD13E7153A5FAA00842B38 /* Info and Help View */,
+				90DD13E8153A5FB800842B38 /* Helper Classes */,
+				90C2F2C71539F2C100C3BCE9 /* RPG_Kit.xcdatamodeld */,
+				90C2F3061539F78600C3BCE9 /* Localizable.strings */,
+				9076C43915515B3A00E8A1C0 /* icon@2x.png */,
+				9076C43715515B3700E8A1C0 /* icon.png */,
+				90C2F2BC1539F2C100C3BCE9 /* Supporting Files */,
+			);
+			path = "RPG Kit";
+			sourceTree = "<group>";
+		};
+		90C2F2BC1539F2C100C3BCE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2BD1539F2C100C3BCE9 /* RPG Kit-Info.plist */,
+				90C2F2BE1539F2C100C3BCE9 /* InfoPlist.strings */,
+				90C2F2C11539F2C100C3BCE9 /* main.m */,
+				90C2F2C31539F2C100C3BCE9 /* RPG Kit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90C2F2E31539F2C300C3BCE9 /* RPG KitTests */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2E91539F2C300C3BCE9 /* RPG_KitTests.h */,
+				90C2F2EA1539F2C300C3BCE9 /* RPG_KitTests.m */,
+				90C2F2E41539F2C300C3BCE9 /* Supporting Files */,
+			);
+			path = "RPG KitTests";
+			sourceTree = "<group>";
+		};
+		90C2F2E41539F2C300C3BCE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2E51539F2C300C3BCE9 /* RPG KitTests-Info.plist */,
+				90C2F2E61539F2C300C3BCE9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90C6ECE3154CD14700413CC7 /* Game Object Linker */ = {
+			isa = PBXGroup;
+			children = (
+				90C6ECDB154CD13F00413CC7 /* GameObjectLinkerViewController.h */,
+				90C6ECDC154CD13F00413CC7 /* GameObjectLinkerViewController.m */,
+				90C6ECDD154CD13F00413CC7 /* GameObjectLinkerViewController.xib */,
+			);
+			name = "Game Object Linker";
+			sourceTree = "<group>";
+		};
+		90C6ECEB154D7FF100413CC7 /* Game Object View Linked and Delink View */ = {
+			isa = PBXGroup;
+			children = (
+				90C6ECE4154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.h */,
+				90C6ECE5154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m */,
+				90C6ECE6154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib */,
+			);
+			name = "Game Object View Linked and Delink View";
+			sourceTree = "<group>";
+		};
+		90D1A9C3153CB39D003D083D /* Game Component Selector */ = {
+			isa = PBXGroup;
+			children = (
+				90D1A9BB153CB38F003D083D /* GameComponentSelectorViewController.h */,
+				90D1A9BC153CB38F003D083D /* GameComponentSelectorViewController.m */,
+				90D1A9BD153CB38F003D083D /* GameComponentSelectorViewController.xib */,
+			);
+			name = "Game Component Selector";
+			sourceTree = "<group>";
+		};
+		90D1A9C4153CB3CC003D083D /* Game Mode View */ = {
+			isa = PBXGroup;
+			children = (
+				90DD13FC153AFA3900842B38 /* GameSelectorViewController.h */,
+				90DD13FD153AFA3900842B38 /* GameSelectorViewController.m */,
+				90DD13FE153AFA3900842B38 /* GameSelectorViewController.xib */,
+			);
+			name = "Game Mode View";
+			sourceTree = "<group>";
+		};
+		90DD13E6153A5F9F00842B38 /* Game Selection View */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2CA1539F2C100C3BCE9 /* MainViewController.h */,
+				90C2F2CB1539F2C100C3BCE9 /* MainViewController.m */,
+				90C2F2D01539F2C200C3BCE9 /* MainViewController.xib */,
+			);
+			name = "Game Selection View";
+			sourceTree = "<group>";
+		};
+		90DD13E7153A5FAA00842B38 /* Info and Help View */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F2CD1539F2C100C3BCE9 /* FlipsideViewController.h */,
+				90C2F2CE1539F2C100C3BCE9 /* FlipsideViewController.m */,
+				90C2F2D31539F2C200C3BCE9 /* FlipsideViewController.xib */,
+			);
+			name = "Info and Help View";
+			sourceTree = "<group>";
+		};
+		90DD13E8153A5FB800842B38 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				90E807AF153C3ADE00530BD2 /* OCStrings.h */,
+				90E807B0153C3ADE00530BD2 /* OCStrings.m */,
+				90DD13E9153A5FCA00842B38 /* Game Data Controller */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		90DD13E9153A5FCA00842B38 /* Game Data Controller */ = {
+			isa = PBXGroup;
+			children = (
+				90C2F3091539F79400C3BCE9 /* OCGameDataController.h */,
+				90C2F30A1539F79400C3BCE9 /* OCGameDataController.m */,
+			);
+			name = "Game Data Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90C2F2AE1539F2C100C3BCE9 /* RPG Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C2F2EE1539F2C300C3BCE9 /* Build configuration list for PBXNativeTarget "RPG Kit" */;
+			buildPhases = (
+				90C2F2AB1539F2C100C3BCE9 /* Sources */,
+				90C2F2AC1539F2C100C3BCE9 /* Frameworks */,
+				90C2F2AD1539F2C100C3BCE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPG Kit";
+			productName = "RPG Kit";
+			productReference = 90C2F2AF1539F2C100C3BCE9 /* RPG Kit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90C2F2DA1539F2C300C3BCE9 /* RPG KitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C2F2F11539F2C300C3BCE9 /* Build configuration list for PBXNativeTarget "RPG KitTests" */;
+			buildPhases = (
+				90C2F2D61539F2C300C3BCE9 /* Sources */,
+				90C2F2D71539F2C300C3BCE9 /* Frameworks */,
+				90C2F2D81539F2C300C3BCE9 /* Resources */,
+				90C2F2D91539F2C300C3BCE9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90C2F2E21539F2C300C3BCE9 /* PBXTargetDependency */,
+			);
+			name = "RPG KitTests";
+			productName = "RPG KitTests";
+			productReference = 90C2F2DB1539F2C300C3BCE9 /* RPG KitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90C2F2A61539F2C100C3BCE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 90C2F2A91539F2C100C3BCE9 /* Build configuration list for PBXProject "RPG Kit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90C2F2A41539F2C100C3BCE9;
+			productRefGroup = 90C2F2B01539F2C100C3BCE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90C2F2AE1539F2C100C3BCE9 /* RPG Kit */,
+				90C2F2DA1539F2C300C3BCE9 /* RPG KitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90C2F2AD1539F2C100C3BCE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C2F2C01539F2C100C3BCE9 /* InfoPlist.strings in Resources */,
+				90C2F2D21539F2C200C3BCE9 /* MainViewController.xib in Resources */,
+				90C2F2D51539F2C200C3BCE9 /* FlipsideViewController.xib in Resources */,
+				90C2F3071539F78600C3BCE9 /* Localizable.strings in Resources */,
+				90DD1401153AFA3900842B38 /* GameSelectorViewController.xib in Resources */,
+				90D1A9C0153CB38F003D083D /* GameComponentSelectorViewController.xib in Resources */,
+				90225FFE153CF191000E7F61 /* GameMetadataViewController.xib in Resources */,
+				9005987D153DDCB60053957D /* PlayerMetadataViewController.xib in Resources */,
+				90C55B84153EE55600C19381 /* GameObjectSelectionViewController.xib in Resources */,
+				90BBECC2154232250025034B /* TaskMetadataViewController.xib in Resources */,
+				90BBECC71542FF630025034B /* GameEngineNotes.txt in Resources */,
+				90BBECCE15430F160025034B /* GamePlayViewController.xib in Resources */,
+				90C6ECE0154CD13F00413CC7 /* GameObjectLinkerViewController.xib in Resources */,
+				90C6ECE9154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib in Resources */,
+				9076C43815515B3700E8A1C0 /* icon.png in Resources */,
+				9076C43A15515B3A00E8A1C0 /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C2F2D81539F2C300C3BCE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C2F2E81539F2C300C3BCE9 /* InfoPlist.strings in Resources */,
+				90C2F3081539F78600C3BCE9 /* Localizable.strings in Resources */,
+				90DD1402153AFA3900842B38 /* GameSelectorViewController.xib in Resources */,
+				90D1A9C1153CB38F003D083D /* GameComponentSelectorViewController.xib in Resources */,
+				90225FFF153CF191000E7F61 /* GameMetadataViewController.xib in Resources */,
+				9005987E153DDCB60053957D /* PlayerMetadataViewController.xib in Resources */,
+				90C55B85153EE55600C19381 /* GameObjectSelectionViewController.xib in Resources */,
+				90BBECC3154232250025034B /* TaskMetadataViewController.xib in Resources */,
+				90BBECC81542FF630025034B /* GameEngineNotes.txt in Resources */,
+				90BBECCF15430F160025034B /* GamePlayViewController.xib in Resources */,
+				90C6ECE1154CD13F00413CC7 /* GameObjectLinkerViewController.xib in Resources */,
+				90C6ECEA154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90C2F2D91539F2C300C3BCE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90C2F2AB1539F2C100C3BCE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C2F2C21539F2C100C3BCE9 /* main.m in Sources */,
+				90C2F2C61539F2C100C3BCE9 /* AppDelegate.m in Sources */,
+				90C2F2C91539F2C100C3BCE9 /* RPG_Kit.xcdatamodeld in Sources */,
+				90C2F2CC1539F2C100C3BCE9 /* MainViewController.m in Sources */,
+				90C2F2CF1539F2C100C3BCE9 /* FlipsideViewController.m in Sources */,
+				90C2F30B1539F79400C3BCE9 /* OCGameDataController.m in Sources */,
+				90DD13FF153AFA3900842B38 /* GameSelectorViewController.m in Sources */,
+				90E807B1153C3ADE00530BD2 /* OCStrings.m in Sources */,
+				90D1A9BE153CB38F003D083D /* GameComponentSelectorViewController.m in Sources */,
+				90225FF8153CED1F000E7F61 /* GameMetadataViewController.m in Sources */,
+				9005987B153DDCB60053957D /* PlayerMetadataViewController.m in Sources */,
+				90C55B82153EE55600C19381 /* GameObjectSelectionViewController.m in Sources */,
+				90BBECC0154232250025034B /* TaskMetadataViewController.m in Sources */,
+				90BBECCC15430F160025034B /* GamePlayViewController.m in Sources */,
+				90BBECD3154313C20025034B /* OCGameEngine.m in Sources */,
+				90C6ECDE154CD13F00413CC7 /* GameObjectLinkerViewController.m in Sources */,
+				90C6ECE7154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C2F2D61539F2C300C3BCE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C2F2EB1539F2C300C3BCE9 /* RPG_KitTests.m in Sources */,
+				90C2F30C1539F79400C3BCE9 /* OCGameDataController.m in Sources */,
+				90DD1400153AFA3900842B38 /* GameSelectorViewController.m in Sources */,
+				90E807B2153C3ADE00530BD2 /* OCStrings.m in Sources */,
+				90D1A9BF153CB38F003D083D /* GameComponentSelectorViewController.m in Sources */,
+				90225FF9153CED1F000E7F61 /* GameMetadataViewController.m in Sources */,
+				9005987C153DDCB60053957D /* PlayerMetadataViewController.m in Sources */,
+				90C55B83153EE55600C19381 /* GameObjectSelectionViewController.m in Sources */,
+				90BBECC1154232250025034B /* TaskMetadataViewController.m in Sources */,
+				90BBECCD15430F160025034B /* GamePlayViewController.m in Sources */,
+				90BBECD4154313C20025034B /* OCGameEngine.m in Sources */,
+				90C6ECDF154CD13F00413CC7 /* GameObjectLinkerViewController.m in Sources */,
+				90C6ECE8154D7FE800413CC7 /* GameObjectViewLinkedAndDelinkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90C2F2E21539F2C300C3BCE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90C2F2AE1539F2C100C3BCE9 /* RPG Kit */;
+			targetProxy = 90C2F2E11539F2C300C3BCE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90226001153CF191000E7F61 /* GameMetadataViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90226000153CF191000E7F61 /* en */,
+			);
+			name = GameMetadataViewController.xib;
+			sourceTree = "<group>";
+		};
+		90C2F2BE1539F2C100C3BCE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C2F2BF1539F2C100C3BCE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90C2F2D01539F2C200C3BCE9 /* MainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C2F2D11539F2C200C3BCE9 /* en */,
+			);
+			name = MainViewController.xib;
+			sourceTree = "<group>";
+		};
+		90C2F2D31539F2C200C3BCE9 /* FlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C2F2D41539F2C200C3BCE9 /* en */,
+			);
+			name = FlipsideViewController.xib;
+			sourceTree = "<group>";
+		};
+		90C2F2E61539F2C300C3BCE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C2F2E71539F2C300C3BCE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90C2F2EC1539F2C300C3BCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90C2F2ED1539F2C300C3BCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90C2F2EF1539F2C300C3BCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG Kit/RPG Kit-Prefix.pch";
+				INFOPLIST_FILE = "RPG Kit/RPG Kit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90C2F2F01539F2C300C3BCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG Kit/RPG Kit-Prefix.pch";
+				INFOPLIST_FILE = "RPG Kit/RPG Kit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		90C2F2F21539F2C300C3BCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPG Kit.app/RPG Kit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG Kit/RPG Kit-Prefix.pch";
+				INFOPLIST_FILE = "RPG KitTests/RPG KitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		90C2F2F31539F2C300C3BCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPG Kit.app/RPG Kit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG Kit/RPG Kit-Prefix.pch";
+				INFOPLIST_FILE = "RPG KitTests/RPG KitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90C2F2A91539F2C100C3BCE9 /* Build configuration list for PBXProject "RPG Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C2F2EC1539F2C300C3BCE9 /* Debug */,
+				90C2F2ED1539F2C300C3BCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C2F2EE1539F2C300C3BCE9 /* Build configuration list for PBXNativeTarget "RPG Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C2F2EF1539F2C300C3BCE9 /* Debug */,
+				90C2F2F01539F2C300C3BCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C2F2F11539F2C300C3BCE9 /* Build configuration list for PBXNativeTarget "RPG KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C2F2F21539F2C300C3BCE9 /* Debug */,
+				90C2F2F31539F2C300C3BCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90C2F2C71539F2C100C3BCE9 /* RPG_Kit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90C2F2C81539F2C100C3BCE9 /* RPG_Kit.xcdatamodel */,
+			);
+			currentVersion = 90C2F2C81539F2C100C3BCE9 /* RPG_Kit.xcdatamodel */;
+			path = RPG_Kit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 90C2F2A61539F2C100C3BCE9 /* Project object */;
+}

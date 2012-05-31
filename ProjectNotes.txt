@@ -1,0 +1,270 @@
+Project: RPG Kit for iOS
+Author(s): Philip Regan
+Source Code Copyright: Copyright (c) 2012 Philip Regan All Rights Reserved.
+Additional Copyright: None
+Source:	New source only; no adaptations.
+Requirements: None
+Notes:
+
+Immediate To-Do:
+X Create Strings constants
+X Add generic game to localizable
+
+Roadmap
+X Port
+    X Core Data
+    X Initial App and Defaults setup
+    X Universe (Game)
+        X Deletion
+        X Creation
+    X Game Components Select
+        X Alter to UIViewController so we can have a toolbar
+    X Game Metadata Edit
+        X Title
+        X Intro
+        X Monetary Unit
+        X Temporal Unit
+        X Retrieve
+        X Update
+    X Player Edit
+        X Name
+        X About
+    X Game Object Selection
+        X Track target entity, relationship, and in-game parent
+        / target entity whose relationship is in-game parent
+    X Tasks
+        X Locations Select
+            X Create
+            X Delete
+            X Object Linker view created and game data controller ready to accept link requests
+            X Task Metadata View Controller now showing menu items
+            X Hook up menu items to view controllers
+            X Test linking of locations to locations
+            X test linking of locations to accomplishments
+            X Edit
+                X View linked locations
+                X View all locations to link to a location
+                X Delink locations
+                X View linked Accomplishments
+                X View all accomplishments to link to a location (->Edit, Create, and Delete)
+                X Delink accomplishments
+        X Accomplishments (handled as tasks)
+            X Edit
+            X Create
+            X Delete
+* Build
+    X Game Engine
+        X Abilities
+            X Player - Stats
+            X Accomplishment - Difficulty Class
+            - Equipment Bonus CANCELLED
+        X Result calculations
+        
+NO MORE TIME!!!
+    * Konami Codes (Handled as player names)
+        * Konami
+            * Free access to all nodes, equipment, and accomplishments not required
+        * Konami007
+            * All equipment, but accomplishments are still run
+* Extend
+    * Graphics
+        * Objects
+            * Players
+            * Nodes
+            * Equipment
+            * Accomplishments
+        * In-Game
+            * Map
+        * Edit Game
+
+Editor Paths
+* Game
+    > Edit
+        X Game
+        X Player
+        X Locations
+            X Locations List
+                X Location Metadata
+                    X Accomplshment List
+                        X LocationList for Linking
+                    X Location List for Linking
+        * Equipment
+            * Equipment List
+                * Equipment Metadata
+                    * Accomplishment List for Linking
+    X Play
+        X Location Display
+            X Location List for traveling
+
+Clean up
+    X Verify and fix listed bugs below
+    X turn off game nuking on startup
+    X implement low memory warnings
+    X Code review, clean up and comment
+    X enable in-game object property
+    X Documentation
+    X Wumpus
+    * Submit
+
+
+
+Bugs (critical)
+* None
+
+Bugs (Non-critical)
+* None
+
+
+Change History:
+    DEVELOPMENT
+    /* PORTING BEGINS */
+    12_04_14_01_00_000: Started source
+    12_04_14_01_00_001: Added OCGameDataController class
+                        Added localized strings file
+    12_04_14_01_00_002:	Added entities to Core Data
+    12_04_14_01_00_003:	Added Game Object Attributes to Core Data
+    12_04_14_01_00_004:	Added Universe Attributes to Core Data
+    					Updated Game Data Controller to reflect relationships
+    12_04_14_01_00_005:	Added task and Player Attributes to Core Data
+    					Updated Game Data Controller to reflect relationships
+    12_04_14_01_00_006:	Added store deletion code for troubleshooting purposes
+    12_04_14_01_00_007: Added Game Data Controller to MainViewController
+    12_04_14_01_00_008: Added game data init and linked game data controller to App Delegate and MainViewController
+    12_04_14_01_00_009:	Added create entity to game data controller
+    12_04_14_01_00_010:	Added Universe Entity creation to game data controller
+    12_04_14_01_00_011: Fixed pointer warnings due to incorrect const declarations
+    12_04_14_01_00_012: Started adding sample locations
+    12_04_14_01_00_013: Added remaining sample data
+                        Updated Core Data store to improve implementation
+    12_04_14_01_00_014: Fixed bug in location population where to-many relationship was not being handled properly; app populates defaults properly and runs to main view controller
+    12_04_14_01_00_015: Added toolbar and table view to MainViewController
+    12_04_14_01_00_016: Added required table view methods to MainViewController
+    12_04_14_01_00_017: Fixed bugs related to custom cells by nuking custom cells
+                        Confirmed the two sample games are showing up in the root view.
+    12_04_15_01_00_018: Added navigation controller for easier navigation during editing
+    12_04_15_01_00_019: Added title and events related to navigation bar so interface updates correctly
+    12_04_15_01_00_020: Added back button management so the title of the button changes in the background
+    12_04_16_01_00_021: Added Generic strings to localizable so new universes get something
+                        Added OCStrings for easier management of Core Data constants
+                        Added Generic Universe Creation to OCGameDataController
+    12_04_16_01_00_022: Added Universe Deletion to MainViewController and OCGameDataController
+    12_04_16_01_00_023: Updated games in MainViewController and OCGameDataController to NSMutableArray
+    12_04_16_01_00_024: Completed and confirmed universe (game) deletion
+    12_04_16_01_01_000: Added Game Component Selection View
+    12_04_16_01_01_001: Fixed bug where the view was not key-value compliant for a key in a different nib (wrong nib being called)
+    12_04_16_01_02_000: Added Game Metadata View Controller
+    12_04_16_01_02_001: Added IBOutlets and IBActions for controls and updated interface
+    12_04_17_01_02_002: Added content updates to OCGameDataController and Game Metadata View Controller
+    12_04_17_01_02_003: Fixed a couple logic errors where the text area contents were not being applied to the current universe
+    12_04_17_01_02_004: Added PlayerMetadataView
+    12_04_17_01_02_005: Added Content hooks to PlayerMetadataView
+    12_04_17_01_02_006: Fixed bug in OCGameDataController where the player was not actually being created in the data store
+    12_04_17_01_03_000: Added GameObjectSelectorViewController
+    12_04_18_01_03_001: Changed GameObjectSelectorViewController to GameObjectSelectionViewController and as a UIViewController so that we could more easily implement a toolbar for adding and deleting objects
+    12_04_18_01_03_002: Updated OCGameDataController to handle CRUD for Tasks
+    12_04_18_01_03_003: Updated GameObjectSelectionController to display objects
+    12_04_18_01_03_004: Updated GameObjectSelectionController to allow editing of lists
+    12_04_18_01_03_005: Updated OCGameDataController to fix misalignment of data across games, but it isn't working
+    12_04_18_01_03_006: Fixed some data misalignment issues in OCGameDataController and Localizable.strings
+    12_04_19_01_03_007: Fixed bug where quests were not being showin GameObjectSelectionView because the section count was incorrect
+    12_04_19_01_03_008: Fixed bug where certain tasks were not having their intros populated properly because of "Intro" vs. "intro"
+    12_04_19_01_04_000: Added Task Metadata View
+    12_04_19_01_04_001: Updated Task Metadata View with interface elements and back button in navigation bar
+    12_04_19_01_04_002: Updated Task Metadata View with editing hooks
+    12_04_19_01_05_000: Added Game Play View and OCGameEngine
+                        Added Abilities entity to Core Data store
+                        Updated Strings to handle Abilities entity
+                        Added Equipment to Core Data Store
+                        Updated Strings to handle Equipment
+    12_04_19_01_05_001: Updated Core Data store to have much simpler Task management, where tasks can be related to tasks only and the controller logic decides whether they are locations or accomplishments
+    12_04_19_01_05_002: Updated OCGameDataController to create locations as just tasks
+    12_04_19_01_05_003: Updated GamePlayViewController with the core methods needed to work
+    12_04_19_01_05_004: Updated GamePlayViewController and Game Selector (Mode) to load GamePlayViewController properly and apply universe-level items.
+                        Updated xib backgrounds to be consistent
+    12_04_19_01_05_005: Added core game play methods to OCGameDataController
+                        Updated OCGameDataController to get the home location
+    12_04_19_01_06_000: Updated core data tasks to have strict sibling, parent, and child relationships
+                        Updated Strings to reflect the relationships
+                        Updated sample game creation to reflect the relationships
+                        Updated Game Play Stack to reflect relationships
+    12_04_19_01_06_001: Identified bug in GamePlayViewController where array is not being passed back from OCGameDataController
+    12_04_19_01_06_002: Fixed bug in GamePlayViewController where an unpopulated array was being called causing a crash that, of course, had no relevance to the actual problem.
+    12_04_19_01_06_003: Updated GamePlayViewController to go from location to location
+    12_04_19_01_06_004: Updated GamePlayViewController so that the back button in the navigation bar will update with the previous location's title
+    12_04_26_01_07_000: Added Accomplishments to Sample Games
+    12_04_26_01_07_001: Updated Game Play View Controller to show the Accomplishments for a given location
+    12_04_26_01_07_002: Updated Game Play View Controller so that the accomplishments button is disabled if there are no accomplishments
+                        Updated Game Play View Controller's accomplishments table to style cells so that show the text being inline rather than actionable
+    12_04_26_01_07_003: Updated Game Play View Controller to show detail view for a given accomplishment
+    /* PORTING COMPLETE. NEW BUILDING BEGINS */
+    12_04_28_01_08_000: Added Game Object Linker View Controller along with the core items needed to manage content
+    12_04_28_01_08_001: Updated Game Object Linker View Controller with code needed to manage and make links with OCGameDataController
+                        Updated OCGameDataController with a basic method to manage linking for Game Object Linker View Controller
+    12_04_28_01_08_002: Added linking table menu to the Task Metadata View
+    12_04_28_01_08_003: Updated linking table menu to show menu items
+    12_04_28_01_08_004: Added Game Object View Linked and Delinked View Controller
+                        Added Linking Stack to OCGameDataController
+    12_04_28_01_08_005: Updated Linker and View/Delinker, and Game Data Controller with v1 code before testing begins
+    12_04_28_01_08_006: Added View/Delinker VC code to TaskMetaView to start testing
+    12_04_28_01_08_007: Fixed problem with linker nibs where deleted properities in the classes were not managed in the nib causing a crash
+    12_04_28_01_08_008: Updated Game Data Controller to show linked locations in edit stack
+    12_04_28_01_08_009: Updated Task Metadata View Controller to link to Game Object View Linked for Accomplishments
+    12_04_28_01_08_010: Updated Linker View to show all instances of a passed entity
+    12_04_28_01_08_011: Updated OCGameDataController to properly link two object's together.
+                        Confirmed that Locations and Accomplishments link and Locations link to other Locations
+    12_04_29_01_08_012: Updated View/Delinker to actually perform delinking
+    12_04_29_01_09_000: Updated OCGameDataController to create Abilities scores for different types of objects
+                        Updated OCGameDataController to link abilities scores to objects
+                        Updated OCGameEngine with core game play routine
+    12_04_29_01_09_001: Fixed bug in Abilities creation that caused a crash in Core Data because value validation was hard set in the CD editor.
+    12_04_29_01_09_002: Updated OCGameEngine with core game mechanic
+    12_04_29_01_09_003: Confirmed core game mechanic works as advertised
+    12_04_30_02_00_000: Started submission clean up work
+                        Updated data store nuking to be more clear
+                        Removed data store nuking for testing
+    12_04_30_02_00_001: Updated AppDelegate to handle low memoery warnings by saving the data store via OCGameDataController
+    12_04_30_02_00_002: Updated FlipView with information about the app and required copyrights
+    12_04_30_02_00_003: Updated MainViewController with clean comments and better code reuse
+    12_04_30_02_00_004: Updated GameSelectorViewController with clean comments and better code reuse
+    12_04_30_02_00_005: Updated GamePlayViewController with clean comments and better code reuse
+                        Updated localized strings with new interface text that was hardcoded into the class
+    12_04_30_02_00_006: Updated OCGameEngine with clean comments and better code reuse
+    12_04_30_02_00_007: Updated GameComponentSelectorViewController with clean comments and better code reuse
+                        Updated GameComponentSelectorViewController to better handle the lack of equipment-related features
+    12_04_30_02_00_008: Updated GameComponentSelectorViewController to remove Equipment
+    12_04_30_02_00_009: Updated Game Object Selection View with clean comments
+    12_04_30_02_00_010: Updated Game Object Linker View with clean comments
+    12_04_30_02_00_011: Updated Game Object View Linked and Delink View with clean comments
+    12_04_30_02_00_012: Updated Game Metadata View with clean comments
+    12_04_30_02_00_013: Updated Player Metadata View with clean comments
+    12_04_30_02_00_014: Updated Task Metadata View with clean comments
+    12_04_30_02_00_015: Updated OCGameDataController with clean comments
+                        Updates localizable.strings with content hard coded in OCGameDataController
+    12_04_30_02_00_016: Updated app so that it supports undeletable tasks (i.e., Home)
+    12_04_30_02_00_017: Updated OCGameDataController to create Wumpus map
+    12_05_02_02_01_018: Updated Edit Actions in Game Selection View, Game Object Selection View, and Game Object View Linked and Delink View to cancel editing upon second pressing of "Edit" button.
+                        Updated OCGameDataController with a function to reset the data store to the default
+                        Updated FlipsideViewController with required hooks to call OCGameDataController to reset games. 
+    
+Original Proposal
+
+GOOD:
+X I would like to update the backend to better handle some of the features detailed in the Android projects. The core problem I discovered is that the databases are not designed to handle the ownership of multiple pieces equipment of equipment amongst multiple game objects.
+X Actual implementation of the GameEngine would be keen.
+
+BETTER:
+
+* Required objects and qualifications to start certain Accomplishments.
+BEST:
+* Graphics of any kind, but I see that coming into play for the final project. I have a couple ideas that probably go beyond the scope of this project.
+
+First steps
+X Successful porting of the Android code to iOS to match the feature set. 
+X Update model (database) to better manage equipment
+
+Second Steps
+X Add the creation, deletion, and linking of core game objects to other game objects (i.e., create a new Task and add it as an Accomplishment to a Location, transfer ownership of an Equipment from a Task to the Player).
+
+Final Steps
+X Creation and deletion of games themselves
+* Some kind of graphics—maybe a Location map during play and linking.
